@@ -5,7 +5,7 @@ WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-COPY app/publish/ .
+COPY app/publish/** .
 
-#ENTRYPOINT ["dotnet", "StadtLandFussApi.dll"]
+#ENTRYPOINT ["dotnet", "Pantry.Ap.dll"]
 CMD ASPNETCORE_URLS=http://*:$PORT dotnet Pantry.Api.dll
