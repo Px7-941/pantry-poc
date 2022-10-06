@@ -7,5 +7,5 @@ EXPOSE 443
 
 COPY app/publish/** .
 
-#ENTRYPOINT ["dotnet", "Pantry.Ap.dll"]
-CMD ASPNETCORE_URLS=http://*:$PORT dotnet Pantry.Api.dll
+ENTRYPOINT ["dotnet", "Pantry.Ap.dll"]
+#CMD ASPNETCORE_URLS=http://*:$PORT dotnet Pantry.Api.dll
